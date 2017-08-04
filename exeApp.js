@@ -4,7 +4,7 @@ var getMotaTuoiTre = require("./parser/getMotaTuoiTre");
 module.exports = function () {
 
 
-    require('node-schedule').scheduleJob('42 * * * *', function () {
+    require('node-schedule').scheduleJob('52 * * * *', function () {
         console.log(`Chạy --------- ${new Date().toISOString()}`)
         try {
             getMotaVnExpress();
