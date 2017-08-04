@@ -2,11 +2,12 @@ module.exports = {
     IDNews: '003',
     NewsName: 'Báo 24h',
     Logo: 'http://anh.24h.com.vn/upload/footer/2009-12-02/20091202162630_logo-chan-trang-24h.jpg',
-    arrRss: [{
-        IDCategory: 'Bao24h001',
-        Category: "Tin tức mới nhất",
-        LinkCategory: "http://www.24h.com.vn/upload/rss/trangchu24h.rss"
-    },
+    arrRss: [
+        {
+            IDCategory: 'Bao24h001',
+            Category: "Tin tức mới nhất",
+            LinkCategory: "http://www.24h.com.vn/upload/rss/trangchu24h.rss"
+        },
         {
             IDCategory: 'Bao24h002',
             Category: "Tin tức trong ngày",
