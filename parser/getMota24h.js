@@ -138,27 +138,28 @@ module.exports = function () {
     for (indexCate in listCate24H) {
         var itemCate = listCate24H[indexCate]
 
-        function callback_urlRssToJsonObj(jsonObj) {
+        function callback_urlRssToJsonObj(jsonObj,linkXML) {
             try {
                 var linkCate = jsonObj.rss.channel[0].link[0]
                 var listMoTa = jsonObj.rss.channel[0].item
-                console.log(listMoTa.length);
+                console.log(linkXML);
                 for (indexMota in listMoTa) {
                     var itemMota = listMoTa[indexMota]
-                    console.log(itemMota.description[0].split(`src=\'`)[1].split(`'`)[0]);
+                    //console.log(itemMota.description[0].split(`src=\'`)[1].split(`'`)[0]);
                     try {
                         var objMota = {
-                            linkCategory: linkCate,
+                            linkCategory: linkXML,
                             linkContents: itemMota.link[0],
                             title: itemMota.title[0],
                             description: itemMota.description[0].split(`<br />`)[1],
                             img: itemMota.description[0].split(`src=\'`)[1].split(`'`)[0],
                         }
-                        console.log(objMota);
+                       // console.log(objMota);
+                        if ( objMota.description==null)objMota.description=""
                         motangan.insertOne(objMota, {linkContents: itemMota.link[0]}, function () {
                         });
                     } catch (e) {
-                        console.log(e);
+                      //  console.log(e);
                     }
 
                 }

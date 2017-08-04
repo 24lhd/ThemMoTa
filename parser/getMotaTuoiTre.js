@@ -73,9 +73,9 @@ module.exports = function () {
     for (indexCate in listCateTuoiTre) {
         var itemCate = listCateTuoiTre[indexCate]
 
-        function callback_urlRssToJsonObj(jsonObj) {
+        function callback_urlRssToJsonObj(jsonObj,linkXML) {
 
-            var linkCate = jsonObj.rss.channel[0].link[0]
+            var linkCate = linkXML
             var listMoTa = jsonObj.rss.channel[0].item
             // console.log(linkCate);
             // console.log(listMoTa.length);
@@ -91,6 +91,7 @@ module.exports = function () {
                         description: itemMota.description[0].split(`</br>`)[1],
                         img: itemMota.description[0].split(`src=\"`)[1].split(`"`)[0],
                     }
+                    if ( objMota.description==null)objMota.description=""
                     motangan.insertOne(objMota, {linkContents: itemMota.link[0]}, function () {
                     });
                 } catch (e) {

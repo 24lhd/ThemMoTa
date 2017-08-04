@@ -670,33 +670,33 @@ module.exports = function () {
     for (indexCate in listCateDanTri) {
         var itemCate = listCateDanTri[indexCate]
 
-        function callback_urlRssToJsonObj(jsonObj) {
+        function callback_urlRssToJsonObj(jsonObj, linkXMl) {
             try {
-                var linkCate = jsonObj.rss.channel[0].link[0]
+                var linkCate = linkXMl
                 var listMoTa = jsonObj.rss.channel[0].item
-                console.log(jsonObj.rss.channel[0]);
+                // console.log(jsonObj.rss.channel[0]);
                 console.log(listMoTa[0].title[0]);
-                console.log(listMoTa[0].link[0]);
                 console.log(listMoTa[0].description[0].split(`src="`)[1].split('"')[0]);
-                // console.log(jsonObj.rss.channel[0].item.length);
-                // for (indexMota in listMoTa) {
-                //     var itemMota = listMoTa[indexMota]
+                console.log(jsonObj.rss.channel[0].item.length);
+                for (indexMota in listMoTa) {
+                    var itemMota = listMoTa[indexMota]
                 //     console.log(itemMota.description[0].split(`src=\'`)[1].split(`'`)[0]);
-                //     try {
-                //         var objMota = {
-                //             linkCategory: linkCate,
-                //             linkContents: itemMota.link[0],
-                //             title: itemMota.title[0],
-                //             description: itemMota.description[0].split(`<br />`)[1],
-                //             img: itemMota.description[0].split(`src="`)[1].split('"')[0],
-                //         }
-                //         console.log(objMota);
-                //         motangan.insertOne(objMota, {linkContents: itemMota.link[0]}, function () {
-                //         });
-                //     } catch (e) {
-                //         console.log(e);
-                //     }
-                // }
+                    try {
+                        var objMota = {
+                            linkCategory: linkCate,
+                            linkContents: itemMota.link[0],
+                            title: itemMota.title[0],
+                            description: itemMota.description[0].split(`<br />`)[1],
+                            img: itemMota.description[0].split(`src="`)[1].split('"')[0],
+                        }
+                       if ( objMota.description==null)objMota.description=""
+                        console.log(objMota);
+                        motangan.insertOne(objMota, {linkContents: itemMota.link[0]}, function () {
+                        });
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
             } catch (e) {
 
                 // console.log(e);

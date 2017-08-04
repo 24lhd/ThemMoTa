@@ -28,9 +28,14 @@ module.exports = function () {
         } catch (e) {
             console.log(`Lỗi getMota24h--------- ${e}`)
         }
+        try {
+            getMotaDanTri();
+        } catch (e) {
+            console.log(`Lỗi getMotaDanTri--------- ${e}`)
+        }
     }
 
 // getXmlFromPreTag();
-    getMotaDanTri();
-
+//     getMotaDanTri();
+    // getMota24h();
 }

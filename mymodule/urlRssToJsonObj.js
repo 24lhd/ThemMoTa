@@ -2,7 +2,7 @@ var getHtmlByUrl = require("../mymodule/getHtmlByUrl");
 var xmlToJsonObj = require("../mymodule/xmlToJsonObj");
 module.exports = function (urlXML, callback) {
     function callback_xmlToJsonObj(json) {
-        callback(json);
+        callback(json, urlXML);
     }
 
 
