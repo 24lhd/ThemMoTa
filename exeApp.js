@@ -5,6 +5,9 @@ var getMotaDanTri = require("./parser/getMotaDanTri");
 
 module.exports = function () {
     console.log(`Chạy --------- ${new Date().toISOString()}`)
+    require('node-schedule').scheduleJob('00 * * * * *', function () {
+        console.log(`Chạy --------- ${new Date().toISOString()}`)
+    });
     require('node-schedule').scheduleJob('00 * * * *', function () {
         try {
             getMotaVnExpress();
