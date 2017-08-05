@@ -35,8 +35,8 @@ module.exports = function () {
     });
 
 
-    getMotaVnExpress();
-    getMotaTuoiTre();
-    getMotaDanTri();
-    getMota24h();
+    // getMotaVnExpress();
+    // getMotaTuoiTre();
+    // getMotaDanTri();
+    // getMota24h();
 }
