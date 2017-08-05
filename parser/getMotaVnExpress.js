@@ -87,15 +87,16 @@ var listCateVnExpress = [
 var urlRssToJsonObj = require("../mymodule/urlRssToJsonObj");
 var motangan = require('../mongo/moTa')
 module.exports = function () {
+
     for (indexCate in listCateVnExpress) {
         var itemCate = listCateVnExpress[indexCate]
 
-        function callback_urlRssToJsonObj(jsonObj,linkXML) {
+        function callback_urlRssToJsonObj(jsonObj, linkXML) {
 
             var linkCate = linkXML
             var listMoTa = jsonObj.rss.channel[0].item
             // console.log(linkCate);
-
+            // var arrItemMota = new Array()
             for (indexMota in listMoTa) {
                 var itemMota = listMoTa[indexMota]
                 try {
@@ -106,16 +107,17 @@ module.exports = function () {
                         description: itemMota.description[0].split(`</br>`)[1],
                         img: itemMota.description[0].split(`src=\"`)[1].split(`"`)[0],
                     }
-                    if ( objMota.description==null)objMota.description=""
-                    motangan.insertOne(objMota, {linkContents: itemMota.link[0]}, function () {
-                    });
+                    if (objMota.description == null) objMota.description = ""
+                    // arrItemMota.push(objMota);
+                    motangan.insertOne(objMota, {linkContents: itemMota.link[0]});
+                    // motangan.insertMany(arrItemMota)
                 } catch (e) {
                 }
-
             }
 
         }
 
         urlRssToJsonObj(itemCate.link, callback_urlRssToJsonObj)
     }
+
 }

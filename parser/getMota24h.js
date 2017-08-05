@@ -138,7 +138,7 @@ module.exports = function () {
     for (indexCate in listCate24H) {
         var itemCate = listCate24H[indexCate]
 
-        function callback_urlRssToJsonObj(jsonObj,linkXML) {
+        function callback_urlRssToJsonObj(jsonObj, linkXML) {
             try {
                 var linkCate = jsonObj.rss.channel[0].link[0]
                 var listMoTa = jsonObj.rss.channel[0].item
@@ -154,18 +154,18 @@ module.exports = function () {
                             description: itemMota.description[0].split(`<br />`)[1],
                             img: itemMota.description[0].split(`src=\'`)[1].split(`'`)[0],
                         }
-                       // console.log(objMota);
-                        if ( objMota.description==null)objMota.description=""
-                        motangan.insertOne(objMota, {linkContents: itemMota.link[0]}, function () {
-                        });
+                        // console.log(objMota);
+                        if (objMota.description == null) objMota.description = ""
+                        motangan.insertOne(objMota, {linkContents: itemMota.link[0]});
                     } catch (e) {
-                      //  console.log(e);
+                        //  console.log(e);
                     }
 
                 }
             } catch (e) {
             }
         }
+
         urlRssToJsonObj(itemCate.linkCategory, callback_urlRssToJsonObj)
     }
 }

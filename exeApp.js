@@ -4,38 +4,39 @@ var getMota24h = require("./parser/getMota24h");
 var getMotaDanTri = require("./parser/getMotaDanTri");
 
 module.exports = function () {
-    require('node-schedule').scheduleJob('30 * * * *', function () {
-        runGetMoTa();
-    });
+    console.log(`Chạy --------- ${new Date().toISOString()}`)
     require('node-schedule').scheduleJob('00 * * * *', function () {
-        runGetMoTa();
-    });
-
-    function runGetMoTa() {
-        console.log(`Chạy --------- ${new Date().toISOString()}`)
         try {
             getMotaVnExpress();
         } catch (e) {
             console.log(`Lỗi getMotaVnExpress--------- ${e}`)
         }
+    });
+    require('node-schedule').scheduleJob('05 * * * *', function () {
         try {
             getMotaTuoiTre();
         } catch (e) {
             console.log(`Lỗi getMotaTuoiTre--------- ${e}`)
         }
+    });
+    require('node-schedule').scheduleJob('10 * * * *', function () {
         try {
             getMota24h();
         } catch (e) {
             console.log(`Lỗi getMota24h--------- ${e}`)
         }
+    });
+    require('node-schedule').scheduleJob('15 * * * *', function () {
         try {
             getMotaDanTri();
         } catch (e) {
             console.log(`Lỗi getMotaDanTri--------- ${e}`)
         }
-    }
+    });
 
-// getXmlFromPreTag();
-//     getMotaDanTri();
-    // getMota24h();
+
+    getMotaVnExpress();
+    getMotaTuoiTre();
+    getMotaDanTri();
+    getMota24h();
 }

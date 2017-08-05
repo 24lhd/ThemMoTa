@@ -680,7 +680,7 @@ module.exports = function () {
                 console.log(jsonObj.rss.channel[0].item.length);
                 for (indexMota in listMoTa) {
                     var itemMota = listMoTa[indexMota]
-                //     console.log(itemMota.description[0].split(`src=\'`)[1].split(`'`)[0]);
+                    //     console.log(itemMota.description[0].split(`src=\'`)[1].split(`'`)[0]);
                     try {
                         var objMota = {
                             linkCategory: linkCate,
@@ -689,10 +689,9 @@ module.exports = function () {
                             description: itemMota.description[0].split(`<br />`)[1],
                             img: itemMota.description[0].split(`src="`)[1].split('"')[0],
                         }
-                       if ( objMota.description==null)objMota.description=""
+                        if (objMota.description == null) objMota.description = ""
                         console.log(objMota);
-                        motangan.insertOne(objMota, {linkContents: itemMota.link[0]}, function () {
-                        });
+                        motangan.insertOne(objMota, {linkContents: itemMota.link[0]});
                     } catch (e) {
                         console.log(e);
                     }
