@@ -55,6 +55,13 @@ module.exports = function () {
             console.log(`Lỗi getMotaLaoDong--------- ${e}`)
         }
     });
+    require('node-schedule').scheduleJob('30 * * * *', function () {//--------------------6
+        try {
+            getMotaThanhNien()
+        } catch (e) {
+            console.log(`Lỗi getMotaThanhNien--------- ${e}`)
+        }
+    });
 
 
 }

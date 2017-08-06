@@ -4,6 +4,7 @@ var listCateLaoDong =
         {
             linkCategory: "http://laodong.com.vn/rss/home.rss",
             linkNews: " http://laodong.com.vn/",
+
             category: "Home",
         },
 
