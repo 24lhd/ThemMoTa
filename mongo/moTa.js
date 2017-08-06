@@ -45,13 +45,18 @@ module.exports = {
                     thang: path[0].split("-")[1],
                     nam: path[0].split("-")[0],
                 }
-                console.log(JSON.stringify(content.pubDate));
-                database.collection(CollName).insertOne(content, function (err, res) {
-                    if (err) throw err;
-                    // callback();
-                    // console.log("Query chèn mô tả " + JSON.stringify(query))
-                    database.close();
-                });
+
+                if (content.linkContents != '' && content.linkContents != undefined && content.linkContents != null
+                    && content.title != '' && content.title != undefined && content.title != null
+                    && content.img != '' && content.img != undefined && content.img != null
+                    && content.linkCategory != '' && content.linkCategory != undefined && content.linkCategory != null) {
+                    database.collection(CollName).insertOne(content, function (err, res) {
+                        if (err) throw err;
+                        console.log("Đã chèn mô tả " + content.title + JSON.stringify(content.pubDate));
+                        database.close();
+                    });
+                } else console.log("Không chèn mô tả " + content.title);
+
             })
         })
     },

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="daecb232-478a-4d92-b0cb-7ad9d4f457ad" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/parser/getMotaThanhNien.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/parser/getMotaTienPhong.js" />
+    <list default="true" id="daecb232-478a-4d92-b0cb-7ad9d4f457ad" name="Default" comment="tạo project">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/parser/getMotaLaoDong.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/www" afterPath="$PROJECT_DIR$/bin/www" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exeApp.js" afterPath="$PROJECT_DIR$/exeApp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mymodule/getHtmlByUrl.js" afterPath="$PROJECT_DIR$/mymodule/getHtmlByUrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parser/getMotaDanTri.js" afterPath="$PROJECT_DIR$/parser/getMotaDanTri.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongo/moTa.js" afterPath="$PROJECT_DIR$/mongo/moTa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parser/getMota24h.js" afterPath="$PROJECT_DIR$/parser/getMota24h.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parser/getMotaTienPhong.js" afterPath="$PROJECT_DIR$/parser/getMotaTienPhong.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -22,61 +21,50 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48401487">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="getMotaDanTri.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/parser/getMotaDanTri.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="668" column="0" lean-forward="false" selection-start-line="668" selection-start-column="0" selection-end-line="706" selection-end-column="1" />
-                  <folding>
-                    <element signature="e#25#23876#0" expanded="false" />
-                    <element signature="e#24271#25737#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="exeApp.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/exeApp.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="731">
-                  <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MongoConnect.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="42" lean-forward="false" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="getMotaTienPhong.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/parser/getMotaTienPhong.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="330" column="33" lean-forward="false" selection-start-line="330" selection-start-column="33" selection-end-line="330" selection-end-column="33" />
-                  <folding>
-                    <element signature="e#28#9307#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="getMotaLaoDong.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/parser/getMotaLaoDong.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="135" column="51" lean-forward="true" selection-start-line="135" selection-start-column="51" selection-end-line="135" selection-end-column="51" />
+              <folding>
+                <element signature="e#26#2732#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MongoConnect.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="moTa.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mongo/moTa.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exeApp.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/exeApp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -107,6 +95,11 @@
       <find>options</find>
       <find>&lt;/a&gt;&lt;/li&gt;</find>
       <find>&lt;/a&gt;</find>
+      <find>.&quot;,</find>
+      <find>rss&quot;&gt;</find>
+      <find>rss&quot;,</find>
+      <find>content</find>
+      <find>getMotaLaoDong</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -117,6 +110,9 @@
       <replace>category</replace>
       <replace>database</replace>
       <replace>&quot;,</replace>
+      <replace>.rss&quot;,</replace>
+      <replace>rss&quot;,&quot;</replace>
+      <replace>rss&quot;,linkNews: &quot; http://laodong.com.vn/&quot;,</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -132,19 +128,20 @@
         <option value="$PROJECT_DIR$/mymodule/getXmlFromPreTag.js" />
         <option value="$PROJECT_DIR$/mymodule/urlRssToJsonObj.js" />
         <option value="$PROJECT_DIR$/node_modules/mongodb/lib/collection.js" />
-        <option value="$PROJECT_DIR$/mongo/moTa.js" />
         <option value="$PROJECT_DIR$/parser/getMotaVnExpress.js" />
         <option value="$PROJECT_DIR$/parser/getMotaTuoiTre.js" />
-        <option value="$PROJECT_DIR$/parser/getMota24h.js" />
-        <option value="$PROJECT_DIR$/config/MongoConnect.js" />
         <option value="$PROJECT_DIR$/parser/getThanhNien.js" />
         <option value="$PROJECT_DIR$/bin/www" />
         <option value="$PROJECT_DIR$/mymodule/getHtmlByUrl.js" />
         <option value="$PROJECT_DIR$/parser/getMotaThanhNien.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/parser/getMotaDanTri.js" />
         <option value="$PROJECT_DIR$/parser/getMotaTienPhong.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/parser/getMota24h.js" />
+        <option value="$PROJECT_DIR$/parser/getMotaLaoDong.js" />
+        <option value="$PROJECT_DIR$/mongo/moTa.js" />
         <option value="$PROJECT_DIR$/exeApp.js" />
+        <option value="$PROJECT_DIR$/config/MongoConnect.js" />
       </list>
     </option>
   </component>
@@ -285,12 +282,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\AppPro\Nodejs\ThemMoTa\config" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\AppPro\Nodejs\ThemMoTa" />
       <recent name="D:\AppPro\Nodejs\ThemMoTa\data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AppPro\Nodejs\ThemMoTa\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -323,7 +320,7 @@
       <workItem from="1501913054279" duration="604000" />
       <workItem from="1501925403786" duration="5255000" />
       <workItem from="1501937538577" duration="1232000" />
-      <workItem from="1501986500833" duration="2772000" />
+      <workItem from="1501986500833" duration="6699000" />
     </task>
     <task id="LOCAL-00001" summary="tạo project">
       <created>1501838605958</created>
@@ -367,16 +364,23 @@
       <option name="project" value="LOCAL" />
       <updated>1501910873784</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="tạo project">
+      <created>1501989315875</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1501989315875</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37231000" />
+    <option name="totallyTimeSpent" value="41158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22750929" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22750929" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -413,14 +417,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mymodule/xmlToJsonObj.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -675,13 +671,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mongo/moTa.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="39" lean-forward="false" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parser/getMotaTuoiTre.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -693,13 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="97" column="37" lean-forward="true" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/getMota24h.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -734,22 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parser/getMotaThanhNien.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3162">
-          <caret line="186" column="12" lean-forward="false" selection-start-line="186" selection-start-column="12" selection-end-line="186" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="33" column="88" lean-forward="false" selection-start-line="33" selection-start-column="88" selection-end-line="33" selection-end-column="88" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mymodule/getHtmlByUrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -769,28 +735,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parser/getMotaTienPhong.js">
+    <entry file="file://$PROJECT_DIR$/parser/getMotaThanhNien.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="330" column="33" lean-forward="false" selection-start-line="330" selection-start-column="33" selection-end-line="330" selection-end-column="33" />
+        <state relative-caret-position="537">
+          <caret line="186" column="12" lean-forward="false" selection-start-line="186" selection-start-column="12" selection-end-line="186" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="53" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="5" />
           <folding>
-            <element signature="e#28#9307#0" expanded="false" />
+            <element signature="e#148#154#0" expanded="true" />
+            <element signature="e#362#368#0" expanded="true" />
+            <element signature="e#592#598#0" expanded="true" />
+            <element signature="e#836#842#0" expanded="true" />
+            <element signature="e#1065#1071#0" expanded="true" />
+            <element signature="e#1293#1299#0" expanded="true" />
+            <element signature="e#1531#1537#0" expanded="true" />
+            <element signature="e#1777#1783#0" expanded="true" />
+            <element signature="e#2012#2018#0" expanded="true" />
+            <element signature="e#2259#2265#0" expanded="true" />
+            <element signature="e#2486#2492#0" expanded="true" />
+            <element signature="e#2713#2719#0" expanded="true" />
+            <element signature="e#2944#2950#0" expanded="true" />
+            <element signature="e#3175#3181#0" expanded="true" />
+            <element signature="e#3403#3409#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exeApp.js">
+    <entry file="file://$PROJECT_DIR$/parser/getMota24h.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="31" lean-forward="false" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+        <state relative-caret-position="17">
+          <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/getMotaTienPhong.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="295" column="0" lean-forward="false" selection-start-line="295" selection-start-column="0" selection-end-line="343" selection-end-column="1" />
+          <folding>
+            <element signature="e#28#9307#0" expanded="false" />
+            <element signature="e#9438#11587#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/getMotaLaoDong.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="135" column="51" lean-forward="true" selection-start-line="135" selection-start-column="51" selection-end-line="135" selection-end-column="51" />
+          <folding>
+            <element signature="e#26#2732#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongo/moTa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="54" column="38" lean-forward="false" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="42" lean-forward="false" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+        <state relative-caret-position="51">
+          <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exeApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
           <folding />
         </state>
       </provider>

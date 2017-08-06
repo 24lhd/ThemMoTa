@@ -326,7 +326,7 @@ module.exports = function () {
                             img: itemMota.description[0].split(`src="`)[1].split(`"`)[0],
                         }
                         if (objMota.description == null) objMota.description = ""
-                        console.log(objMota);
+                        // console.log(objMota);
                         motangan.insertOne(objMota, {linkContents: itemMota.link[0]});
                     } catch (e) {
                         console.log(e);
