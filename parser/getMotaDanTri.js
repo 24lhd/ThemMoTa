@@ -669,7 +669,6 @@ var xmlToJsonObj = require("../mymodule/xmlToJsonObj");
 module.exports = function () {
     for (indexCate in listCateDanTri) {
         var itemCate = listCateDanTri[indexCate]
-
         function callback_urlRssToJsonObj(jsonObj, linkXMl) {
             try {
                 var linkCate = linkXMl

@@ -3,7 +3,9 @@ module.exports = function (url/*Đường dẫn của html cần lấy*/, result
     request(url, function (error, res, htmlBody) {
         if (!error && res.statusCode == 200)
             result(htmlBody);
-        else result("lỗi lấy html");
+        else{
+            console.log("lỗi lấy html getHTMLbyURL "+url)
+        }
 
     })//request
 }//module.exports
