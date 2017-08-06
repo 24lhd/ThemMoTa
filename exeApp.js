@@ -5,6 +5,7 @@ var getMotaDanTri = require("./parser/getMotaDanTri");
 var getMotaThanhNien = require("./parser/getMotaThanhNien");
 var getMotaTienPhong = require("./parser/getMotaTienPhong");
 var getMotaLaoDong = require("./parser/getMotaLaoDong");
+var getMotaVietNamNet = require("./parser/getMotaVietNamNet");
 
 module.exports = function () {
 
@@ -60,6 +61,13 @@ module.exports = function () {
             getMotaThanhNien()
         } catch (e) {
             console.log(`Lỗi getMotaThanhNien--------- ${e}`)
+        }
+    });
+    require('node-schedule').scheduleJob('30 * * * *', function () {//--------------------6
+        try {
+            getMotaVietNamNet()
+        } catch (e) {
+            console.log(`Lỗi getMotaVietNamNet--------- ${e}`)
         }
     });
 

@@ -1,4 +1,4 @@
-var x =
+var listCateTuoiTre =
     [
         {
             linkNews: "http://vietnamnet.vn",
@@ -87,3 +87,45 @@ var x =
             , linkCategory: " http://vietnamnet.vn/rss/goc-nhin-thang.rss "
         },
     ]
+var urlRssToJsonObj = require("../mymodule/urlRssToJsonObj")
+var motangan = require('../mongo/moTa')
+module.exports = function () {
+    for (indexCate in listCateTuoiTre) {
+        var itemCate = listCateTuoiTre[indexCate]
+
+        function callback_urlRssToJsonObj(jsonObj, linkXMl) {
+            try {
+                var linkCate = linkXMl
+                var listMoTa = jsonObj.rss.channel[0].item
+                console.log(linkCate);
+                console.log(listMoTa.length);
+                // console.log(jsonObj);
+                for (indexMota in listMoTa) {
+                    var itemMota = listMoTa[indexMota]
+                    // console.log(itemMota );
+                    // console.log( itemMota.title[0]);
+                    try {
+                        var objMota = {
+                            linkCategory: linkCate,
+                            linkContents: itemMota.link[0],
+                            title: itemMota.title[0],
+                            description: itemMota.description[0].split("<br")[0].replace("<p>", "").replace("</p>", "").replace("&#160;", " "),
+                            img: itemMota.description[0].split(`src="`)[1].split(`"`)[0].split(`?`)[0],
+                        }
+                        if (objMota.description == null) objMota.description = ""
+                        console.log(objMota);
+                        motangan.insertOne(objMota, {linkContents: itemMota.link[0]});
+                    } catch (e) {
+                        console.log(e);
+                    }
+                }
+            } catch (e) {
+
+                console.log(e);
+                console.log(jsonObj);
+            }
+        }
+
+        urlRssToJsonObj(itemCate.linkCategory, callback_urlRssToJsonObj)
+    }
+}
