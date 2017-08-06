@@ -45,7 +45,6 @@ module.exports = {
                     thang: path[0].split("-")[1],
                     nam: path[0].split("-")[0],
                 }
-
                 if (content.linkContents != '' && content.linkContents != undefined && content.linkContents != null
                     && content.title != '' && content.title != undefined && content.title != null
                     && content.img != '' && content.img != undefined && content.img != null

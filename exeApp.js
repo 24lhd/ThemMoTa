@@ -9,7 +9,7 @@ var getMotaVietNamNet = require("./parser/getMotaVietNamNet");
 
 module.exports = function () {
 
-    console.log(`Chạy --------- ${new Date().toISOString()}`)
+    console.log(`Bắt đầu --------- ${new Date().toISOString()}`)
     require('node-schedule').scheduleJob('00 * * * * *', function () {
         console.log(`Chạy --------- ${new Date().toISOString()}`)
     });
@@ -56,20 +56,18 @@ module.exports = function () {
             console.log(`Lỗi getMotaLaoDong--------- ${e}`)
         }
     });
-    require('node-schedule').scheduleJob('30 * * * *', function () {//--------------------6
+    require('node-schedule').scheduleJob('30 * * * *', function () {//--------------------7
         try {
             getMotaThanhNien()
         } catch (e) {
             console.log(`Lỗi getMotaThanhNien--------- ${e}`)
         }
     });
-    require('node-schedule').scheduleJob('35 * * * *', function () {//--------------------6
+    require('node-schedule').scheduleJob('35 * * * *', function () {//--------------------8
         try {
             getMotaVietNamNet()
         } catch (e) {
             console.log(`Lỗi getMotaVietNamNet--------- ${e}`)
         }
     });
-
-
 }

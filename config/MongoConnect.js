@@ -7,5 +7,4 @@ module.exports = function (callbackMongo) {
             return;
         callbackMongo(db);
     });
-
 }

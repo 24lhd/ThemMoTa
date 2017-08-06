@@ -92,13 +92,12 @@ var motangan = require('../mongo/moTa')
 module.exports = function () {
     for (indexCate in listCateTuoiTre) {
         var itemCate = listCateTuoiTre[indexCate]
-
         function callback_urlRssToJsonObj(jsonObj, linkXMl) {
             try {
                 var linkCate = linkXMl
                 var listMoTa = jsonObj.rss.channel[0].item
-                console.log(linkCate);
-                console.log(listMoTa.length);
+                // console.log(linkCate);
+                // console.log(listMoTa.length);
                 // console.log(jsonObj);
                 for (indexMota in listMoTa) {
                     var itemMota = listMoTa[indexMota]
@@ -113,7 +112,7 @@ module.exports = function () {
                             img: itemMota.description[0].split(`src="`)[1].split(`"`)[0].split(`?`)[0],
                         }
                         if (objMota.description == null) objMota.description = ""
-                        console.log(objMota);
+                        // console.log(objMota);
                         motangan.insertOne(objMota, {linkContents: itemMota.link[0]});
                     } catch (e) {
                         console.log(e);
