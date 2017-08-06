@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="daecb232-478a-4d92-b0cb-7ad9d4f457ad" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/MongoConnect.js" afterPath="$PROJECT_DIR$/config/MongoConnect.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exeApp.js" afterPath="$PROJECT_DIR$/exeApp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parser/getMotaVietNamNet.js" afterPath="$PROJECT_DIR$/parser/getMotaVietNamNet.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,8 +32,8 @@
       <file leaf-file-name="exeApp.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/exeApp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="67" column="31" lean-forward="true" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+            <state relative-caret-position="255">
+              <caret line="65" column="44" lean-forward="false" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -307,7 +305,7 @@
       <workItem from="1501937538577" duration="1232000" />
       <workItem from="1501986500833" duration="8276000" />
       <workItem from="1501998623509" duration="3862000" />
-      <workItem from="1502008593569" duration="7088000" />
+      <workItem from="1502008593569" duration="7118000" />
     </task>
     <task id="LOCAL-00001" summary="tạo project">
       <created>1501838605958</created>
@@ -372,16 +370,23 @@
       <option name="project" value="LOCAL" />
       <updated>1502014485329</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="8 trang báo">
+      <created>1502015919851</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1502015919851</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53685000" />
+    <option name="totallyTimeSpent" value="53715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1616" height="886" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13742875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13742875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -411,7 +416,8 @@
     <MESSAGE value="tạo project" />
     <MESSAGE value="6 trang báo" />
     <MESSAGE value="7 trang báo" />
-    <option name="LAST_COMMIT_MESSAGE" value="7 trang báo" />
+    <MESSAGE value="8 trang báo" />
+    <option name="LAST_COMMIT_MESSAGE" value="8 trang báo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -917,8 +923,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/exeApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="67" column="31" lean-forward="true" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+        <state relative-caret-position="255">
+          <caret line="65" column="44" lean-forward="false" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
           <folding />
         </state>
       </provider>

@@ -63,7 +63,7 @@ module.exports = function () {
             console.log(`Lỗi getMotaThanhNien--------- ${e}`)
         }
     });
-    require('node-schedule').scheduleJob('30 * * * *', function () {//--------------------6
+    require('node-schedule').scheduleJob('35 * * * *', function () {//--------------------6
         try {
             getMotaVietNamNet()
         } catch (e) {
