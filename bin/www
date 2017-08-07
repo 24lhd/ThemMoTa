@@ -92,7 +92,8 @@ function onListening() {
 //code c?a t?i
 
 
-require("../exeApp")();
+// require("../exeApp")();
+require("../demo")();
 
 
 

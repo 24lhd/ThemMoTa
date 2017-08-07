@@ -34,29 +34,28 @@ module.exports = {
     },
     insertOne: function (content, query) {
         Mongo(function (database) {
-            database.collection(CollName).deleteMany(query, function (err, result) {
-                if (err) throw err;
-                var date = new Date();
-                var path = date.toISOString().split("Z")[0].split("T");
-                content.pubDate = {
-                    phut: path[1].split(":")[1],
-                    gio: path[1].split(":")[0],
-                    ngay: path[0].split("-")[2],
-                    thang: path[0].split("-")[1],
-                    nam: path[0].split("-")[0],
-                }
-                if (content.linkContents != '' && content.linkContents != undefined && content.linkContents != null
-                    && content.title != '' && content.title != undefined && content.title != null
-                    && content.img != '' && content.img != undefined && content.img != null
-                    && content.linkCategory != '' && content.linkCategory != undefined && content.linkCategory != null) {
+            if (content.linkContents != '' && content.linkContents != undefined && content.linkContents != null
+                && content.title != '' && content.title != undefined && content.title != null
+                && content.img != '' && content.img != undefined && content.img != null
+                && content.linkCategory != '' && content.linkCategory != undefined && content.linkCategory != null) {
+                database.collection(CollName).deleteMany(query, function (err, result) {
+                    if (err) throw err;
+                    var date = new Date();
+                    var path = date.toISOString().split("Z")[0].split("T");
+                    content.pubDate = {
+                        phut: path[1].split(":")[1],
+                        gio: path[1].split(":")[0],
+                        ngay: path[0].split("-")[2],
+                        thang: path[0].split("-")[1],
+                        nam: path[0].split("-")[0],
+                    }
                     database.collection(CollName).insertOne(content, function (err, res) {
                         if (err) throw err;
                         console.log("Đã chèn mô tả " + content.title + JSON.stringify(content.pubDate));
                         database.close();
                     });
-                } else console.log("Không chèn mô tả " + content.title);
-
-            })
+                })
+            } else console.log("Không chèn mô tả " + content.title);
         })
     },
     findAll: function (callback) {
