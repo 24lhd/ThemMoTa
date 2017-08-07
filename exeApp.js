@@ -10,7 +10,7 @@ var getMotaVietNamNet = require("./parser/getMotaVietNamNet");
 module.exports = function () {
 
     console.log(`Bắt đầu --------- ${new Date().toISOString()}`)
-    require('node-schedule').scheduleJob('00 * * * *', function () { //--------------------1
+    require('node-schedule').scheduleJob('00 * * * * *', function () { //--------------------1
         console.log(`Giờ là --------- ${new Date().toISOString()}`)
         switch (parseInt(new Date().getMinutes())) {
             case 0:
