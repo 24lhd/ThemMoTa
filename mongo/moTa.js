@@ -23,6 +23,7 @@ module.exports = {
                     ngay: path[0].split("-")[2],
                     thang: path[0].split("-")[1],
                     nam: path[0].split("-")[0],
+                    currenttimemillis: date.getTime(),
                 }
             }
             database.collection(CollName).insertMany(content, function (err, res) {

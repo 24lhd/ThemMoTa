@@ -90,11 +90,6 @@ function onListening() {
 }
 
 //code c?a t?i
-
-
 require("../exeApp")();
 // require("../demo")();
-
-
-
 //code c?a t?i
